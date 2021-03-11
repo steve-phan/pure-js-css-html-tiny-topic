@@ -1,0 +1,22 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#wrap-image {
+  height: 250px;
+  width: calc(600px / 4);
+  background: url(./move.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  animation: sprite 1s steps(4, end) infinite;
+}
+
+@keyframes sprite {
+  from {
+  }
+  to {
+    background-position: -600px;
+  }
+}
