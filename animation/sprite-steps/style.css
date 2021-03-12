@@ -10,7 +10,7 @@ body {
   background: url(./move.png);
   background-repeat: no-repeat;
   margin: 0 auto;
-  animation: sprite 1s steps(4, end) infinite;
+  animation: sprite 0.5s steps(4, end) infinite;
 }
 
 @keyframes sprite {

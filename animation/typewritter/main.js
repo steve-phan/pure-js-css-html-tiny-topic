@@ -15,3 +15,4 @@ setInterval(() => {
   console.log(x);
   text.style.animationTimingFunction = `steps(${Math.floor(x)}, end)`;
 }, 4500);
+e;
