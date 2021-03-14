@@ -5,12 +5,14 @@ body {
   margin: 0;
 }
 #wrap-image {
-  height: 250px;
+  /* height: 250px;
   width: calc(600px / 4);
   background: url(./move.png);
   background-repeat: no-repeat;
   margin: 0 auto;
-  animation: sprite 0.5s steps(4, end) infinite;
+  animation: sprite 0.5s steps(4, end) infinite; */
+  width: 100%;
+  margin: 0 auto;
 }
 
 @keyframes sprite {
@@ -19,4 +21,7 @@ body {
   to {
     background-position: -600px;
   }
+}
+svg {
+  width: 100%;
 }
