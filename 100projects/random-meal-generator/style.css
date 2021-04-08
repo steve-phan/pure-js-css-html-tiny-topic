@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+*, html, body {
+    padding:  0;
+    margin:  0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+ul {
+    padding: 0;
+    /* margin: 0 auto; */
+    width: fit-content;
+}
+
+li {
+    list-style: none;
+    padding:  8px 10px;
+    text-align: left;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+button#get-meal {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: rgb(172, 148, 14);
+    padding: 0.6rem 1.6rem;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+button#get-meal:hover {
+    background-color: rgb(153, 132, 13) ;
+}
+
+.meal-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    width: 100%;
+    padding : 10px
+}
+.meal-title {
+  margin-bottom:  10px;
+  padding: 10px;
+
+}
+.meal-img {
+    width: 100%;
+}
+
+.meal-des span {
+    display: block;
+    margin :10px;
+    text-align: left;
+    
+}
+.meal-des__sort {
+    width: fit-content;
+
+}
+.meal-desc__text {
+    text-align: left;
+    padding: 10px;
+}
+@media (min-width :600px)  {
+    .meal-des {
+        width: 65%;
+    }
+    .meal-info {
+        width: 35%;
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* padding-top: 50px; */
+      }
+      #train {
+        position: relative;
+        cursor: pointer;
+      }
+      #field {
+        height: 200px;
+        border-bottom: 3px rgb(255, 7, 7) dashed;
+        position: relative;
+      }
+
+      #ball {
+        position: absolute;
+        cursor: pointer;
+      }
+      #javascript-info {
+        /* height: 400px;
+        width: 350px;
+        overflow: auto; */
+      }
+      /* Start CSS progess bar */
+      #progress-container {
+        position: fixed;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        background: transparent;
+        transition: all ease-out 0.2s;
+      }
+
+      #progress-container.ready {
+        transform: translateY(-3px);
+      }
+
+      #progress-bar {
+        display: block;
+        width: 0;
+        height: 3px;
+        background: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img id="train" src="https://js.cx/clipart/train.gif" />
+    <div id="text"></div>
+    <div id="field">
+      <img
+        src="https://js.cx/clipart/ball.svg"
+        width="40"
+        height="40"
+        id="ball"
+      />
+    </div>
+    <h1 id="lily">This is Lily</h1> -->
+
+    <div id="content">
+      <p>
+        1Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        2Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        3Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        4Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        5Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        6Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        7Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+      <p>
+        8Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil
+        illum id nemo cum exercitationem temporibus, doloribus perspiciatis in
+        necessitatibus minima magnam dicta dolore ipsum totam, tempora voluptas
+        iure veniam?
+      </p>
+    </div>
+
+    <script src="animation.js"></script>
+    <script src="progress.js"></script>
+  </body>
+</html>
