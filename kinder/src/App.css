@@ -1,0 +1,85 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.content {
+  display: block;
+  padding-top: 60px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.print {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2021;
+}
+
+.big-text {
+  display: block;
+  font-size: 60px;
+  position: relative;
+  z-index: 100;
+  letter-spacing: 10px;
+  padding-top: 40px;
+}
+.cross-line {
+  position: absolute;
+  border-bottom: 1px dashed rgb(209, 206, 206);
+  display: block;
+  width: 100vw;
+  height: 1px;
+  bottom: 18px;
+}
+
+.cross-line::after,
+.cross-line::before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px dashed rgb(209, 206, 206);
+  display: block;
+  width: 100vw;
+  height: 1px;
+}
+.cross-line::after {
+  top: -64px;
+}
+.cross-line::before {
+  top: -30px;
+  z-index: -1;
+}
